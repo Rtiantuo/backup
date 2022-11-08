@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="demo" type="another.sh" name="NMB"/>
+<!--    <include file="$(find demo)/src/test.py"/>-->
+</launch>

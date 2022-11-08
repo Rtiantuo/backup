@@ -1,0 +1,9 @@
+<launch>
+<!--    <node pkg="demo" type="qr_target_cmp_test.py" name="cykablyat"/>-->
+    <group ns="dji_env">
+        <machine name="dji" address="dji-MANIFOLD-2-C" env-loader="/usr/WS/dl_ws/devel/env.sh" user="dji"/>
+        <node pkg="px4_realsense_bridge" type="px4_realsense_bridge_node" machine="dji" name="another_ndoe"/>
+    </group>
+    <node pkg="demo" type="ctrl_node.py" name="cyka"/>
+
+</launch>
